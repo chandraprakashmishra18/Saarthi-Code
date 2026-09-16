@@ -1,0 +1,10 @@
+{
+  "name": "Remix SAARTHI - Guided by Stories",
+  "description": "An immersive story-driven travel platform connecting travelers with verified local storytellers, curated journeys, AI comic journals, and safety-focused solo matching taking inspiration from steller wanderlust and pinterest.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
