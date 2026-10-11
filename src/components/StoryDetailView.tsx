@@ -69,7 +69,7 @@ export const StoryDetailView: React.FC<StoryDetailViewProps> = ({
           </div>
 
           <div className="hidden sm:flex items-center gap-2.5">
-            <span className="text-xs font-serif font-bold text-[#d4af37]">${story.price}</span>
+            <span className="text-xs font-serif font-bold text-[#d4af37]">₹{story.price.toLocaleString('en-IN')}</span>
             <button
               id="btn-quick-book"
               onClick={() => onBookStory(story)}
@@ -157,7 +157,7 @@ export const StoryDetailView: React.FC<StoryDetailViewProps> = ({
 
             <button
               id="btn-view-guide-profile"
-              onClick={() => onOpenGuideProfile('elias-thorne')}
+              onClick={() => onOpenGuideProfile(story.authorGuide.id || 'rudra-pratap')}
               className="px-3.5 py-2 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-[#f5f5f5] hover:bg-white/[0.08] transition cursor-pointer backdrop-blur-md"
             >
               Guide Profile
@@ -322,7 +322,7 @@ export const StoryDetailView: React.FC<StoryDetailViewProps> = ({
                 <div className="p-4 rounded-3xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] text-center shadow-md">
                   <span className="material-symbols-outlined text-[#d4af37] text-[24px] mb-1">payments</span>
                   <span className="text-[11px] text-[#9499a1] block uppercase tracking-wider">Price</span>
-                  <span className="text-sm font-serif font-bold text-[#d4af37]">${story.price} / group</span>
+                  <span className="text-sm font-serif font-bold text-[#d4af37]">₹{story.price.toLocaleString('en-IN')} / group</span>
                 </div>
               </div>
 
@@ -365,14 +365,14 @@ export const StoryDetailView: React.FC<StoryDetailViewProps> = ({
                   </div>
 
                   <button
-                    onClick={() => onOpenGuideProfile('elias-thorne')}
-                    className="px-4 py-2 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-[#f5f5f5] hover:bg-white/[0.08] transition backdrop-blur-md"
+                    onClick={() => onOpenGuideProfile(story.authorGuide.id || 'rudra-pratap')}
+                    className="px-4 py-2 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-[#f5f5f5] hover:bg-white/[0.08] transition backdrop-blur-md cursor-pointer"
                   >
-                    View All Stories by Elias
+                    View All Stories by {story.authorGuide.name.split(' ')[0]}
                   </button>
                 </div>
                 <p className="text-xs text-[#9499a1] leading-relaxed font-light">
-                  Elias specializes in the architectural anthropology of the Thar desert. Each story is researched using original Persian and Sanskrit manuscripts with verified oral accounts from surrounding village elders.
+                  {story.authorGuide.bio || `${story.authorGuide.name} specializes in the cultural anthropology of ${story.location}. Each narrative is grounded in local oral folklore, ancestral traditions, and field research.`}
                 </p>
               </div>
             </motion.div>
@@ -387,7 +387,7 @@ export const StoryDetailView: React.FC<StoryDetailViewProps> = ({
             </span>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl sm:text-3xl font-serif font-bold text-[#d4af37]">
-                ${story.price}
+                ₹{story.price.toLocaleString('en-IN')}
               </span>
               <span className="text-xs text-[#9499a1]">for private group up to 6</span>
             </div>

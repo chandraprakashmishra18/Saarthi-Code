@@ -121,7 +121,7 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               <div className="flex items-center gap-3">
                 <div className="text-right hidden sm:block">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-white/70 block">Experience from</span>
-                  <span className="text-lg font-serif font-semibold text-[#B39029]">${featuredStory.price}</span>
+                  <span className="text-lg font-serif font-semibold text-[#B39029]">₹{featuredStory.price.toLocaleString('en-IN')}</span>
                 </div>
 
                 <button
