@@ -106,7 +106,11 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFCF8] text-[#1C1C1E] flex flex-col font-sans selection:bg-[#B39029] selection:text-[#FDFCF8]">
+    <div className="min-h-screen bg-[#070A12] text-slate-100 flex flex-col font-sans selection:bg-amber-400 selection:text-slate-950 relative overflow-x-hidden">
+      {/* Subtle luxury ambient glows */}
+      <div className="fixed top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="fixed bottom-1/4 right-10 w-[500px] h-[500px] bg-amber-500/[0.08] rounded-full blur-[130px] pointer-events-none -z-10" />
+
       {/* Top Header Navigation */}
       <TopNav
         currentScreen={currentScreen}

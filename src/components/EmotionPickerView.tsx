@@ -26,29 +26,29 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFCF8] text-[#1C1C1E] flex flex-col justify-between p-6 sm:p-8 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-[#070A12] text-slate-100 flex flex-col justify-between p-6 sm:p-8 max-w-5xl mx-auto">
       {/* Top Header */}
       <div>
         <div className="flex items-center justify-between mb-6">
           <button
             id="btn-emotion-back"
             onClick={onBack}
-            className="w-10 h-10 rounded border border-[rgba(28,28,30,0.12)] bg-white flex items-center justify-center text-[#1C1C1E] hover:border-[#B39029] transition cursor-pointer shadow-2xs"
+            className="w-10 h-10 rounded-xl border border-white/10 bg-white/[0.05] hover:bg-white/[0.1] hover:border-amber-400/50 flex items-center justify-center text-slate-200 hover:text-white transition cursor-pointer shadow-md"
           >
             <span className="material-symbols-outlined text-[20px]">arrow_back</span>
           </button>
           
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[rgba(28,28,30,0.6)] font-medium">Step 1 of 2</span>
-            <div className="w-12 h-1.5 bg-[rgba(28,28,30,0.1)] rounded-full overflow-hidden">
-              <div className="w-1/2 h-full bg-[#B39029] rounded-full" />
+          <div className="flex items-center gap-3">
+            <span className="font-mono text-xs uppercase tracking-widest text-sky-400 font-semibold">Step 1 of 2</span>
+            <div className="w-16 h-2 bg-white/10 rounded-full overflow-hidden">
+              <div className="w-1/2 h-full bg-gradient-to-r from-sky-400 to-amber-400 rounded-full" />
             </div>
           </div>
 
           <button
             id="btn-emotion-skip"
             onClick={() => onSelectEmotions([])}
-            className="font-mono text-[11px] uppercase tracking-wider text-[rgba(28,28,30,0.6)] hover:text-[#B39029] font-medium transition cursor-pointer"
+            className="font-mono text-xs uppercase tracking-wider text-slate-400 hover:text-amber-300 font-semibold transition cursor-pointer py-1 px-2.5 rounded-lg hover:bg-white/[0.04]"
           >
             Skip for now
           </button>
@@ -60,20 +60,20 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.15em] px-3 py-1 bg-[#FDFCF8] border border-[rgba(28,28,30,0.12)] text-[#B39029] rounded font-medium inline-block mb-3">
-            Emotional Curation
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] px-3 py-1 bg-amber-500/15 border border-amber-400/30 text-amber-300 rounded-lg font-semibold inline-block mb-3">
+            Resonance Alignment
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#1C1C1E] tracking-tight mb-2 font-semibold">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white tracking-tight mb-2.5 font-bold">
             How do you want to feel?
           </h2>
-          <p className="text-sm sm:text-base text-[rgba(28,28,30,0.65)] max-w-xl leading-relaxed font-normal">
+          <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed font-normal">
             Select one or more emotional states. Saarthi will curate oral legends, subterranean walks, and verified historians tailored to your mood.
           </p>
         </motion.div>
       </div>
 
       {/* Emotion Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-4">
         {EMOTIONS.map((emotion, idx) => {
           const isSelected = selectedEmotions.includes(emotion.id);
 
@@ -83,14 +83,14 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              whileHover={{ scale: 1.01 }}
+              whileHover={{ scale: 1.015 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => toggleEmotion(emotion.id)}
               id={`emotion-card-${emotion.id.toLowerCase()}`}
-              className={`relative rounded-xl overflow-hidden cursor-pointer border transition-all duration-300 min-h-[180px] flex flex-col justify-end p-5 ${
+              className={`relative rounded-2xl overflow-hidden cursor-pointer border transition-all duration-300 min-h-[190px] flex flex-col justify-end p-5 ${
                 isSelected
-                  ? 'border-[#B39029] ring-2 ring-[#B39029]/30 shadow-md bg-white'
-                  : 'border-[rgba(28,28,30,0.1)] hover:border-[rgba(28,28,30,0.3)] bg-white shadow-2xs'
+                  ? 'border-amber-400 ring-2 ring-amber-400/40 shadow-xl shadow-amber-950/40 bg-[#0F172A]'
+                  : 'border-white/10 hover:border-white/25 bg-[#0A0E1A] shadow-md'
               }`}
             >
               {/* Background Photo */}
@@ -104,21 +104,21 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
               <div 
                 className={`absolute inset-0 transition-opacity duration-300 ${
                   isSelected 
-                    ? 'bg-gradient-to-t from-black/85 via-black/45 to-black/10' 
-                    : 'bg-gradient-to-t from-black/80 via-black/40 to-transparent hover:from-black/70'
+                    ? 'bg-gradient-to-t from-[#070A12] via-[#070A12]/60 to-black/30' 
+                    : 'bg-gradient-to-t from-[#070A12] via-[#070A12]/50 to-transparent hover:from-[#070A12]/80'
                 }`} 
               />
 
               {/* Selection Checkmark Badge */}
               <div className="absolute top-3.5 right-3.5 z-10">
                 <div
-                  className={`w-6 h-6 rounded flex items-center justify-center transition-all ${
+                  className={`w-7 h-7 rounded-xl flex items-center justify-center transition-all ${
                     isSelected
-                      ? 'bg-[#B39029] text-white shadow-xs font-bold'
-                      : 'bg-black/40 text-white/70 border border-white/30 backdrop-blur-xs'
+                      ? 'bg-amber-400 text-slate-950 shadow-md font-bold'
+                      : 'bg-black/50 text-white/80 border border-white/20 backdrop-blur-md'
                   }`}
                 >
-                  <span className="material-symbols-outlined text-[15px]">
+                  <span className="material-symbols-outlined text-[17px]">
                     {isSelected ? 'check' : 'add'}
                   </span>
                 </div>
@@ -126,15 +126,15 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
 
               {/* Icon & Details */}
               <div className="relative z-10 text-white">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="material-symbols-outlined text-[20px] text-[#B39029]">
+                <div className="flex items-center gap-2.5 mb-1.5">
+                  <span className="material-symbols-outlined text-[22px] text-amber-400">
                     {emotion.icon}
                   </span>
-                  <h3 className="text-2xl font-serif text-white tracking-wide font-medium">
+                  <h3 className="text-2xl font-serif text-white tracking-wide font-bold">
                     {emotion.label}
                   </h3>
                 </div>
-                <p className="text-xs text-white/80 leading-relaxed font-light">
+                <p className="text-xs text-slate-200 leading-relaxed font-normal">
                   {emotion.subtext}
                 </p>
               </div>
@@ -147,15 +147,15 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pt-6 border-t border-[rgba(28,28,30,0.08)] flex flex-col sm:flex-row items-center justify-between gap-4 mt-6"
+        className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 mt-6"
       >
-        <div className="flex items-center gap-2">
-          <span className="font-mono text-xs text-[rgba(28,28,30,0.6)] uppercase tracking-wider">Selected:</span>
-          <div className="flex flex-wrap gap-1.5">
+        <div className="flex items-center gap-2.5">
+          <span className="font-mono text-xs text-slate-400 uppercase tracking-wider font-medium">Selected:</span>
+          <div className="flex flex-wrap gap-2">
             {selectedEmotions.map(e => (
               <span 
                 key={e} 
-                className="font-mono text-[11px] px-2.5 py-0.5 rounded bg-[#faf8f2] border border-[rgba(28,28,30,0.12)] text-[#B39029] font-medium"
+                className="font-mono text-xs px-3 py-1 rounded-xl bg-amber-400/15 border border-amber-400/30 text-amber-300 font-semibold"
               >
                 #{e}
               </span>
@@ -166,7 +166,7 @@ export const EmotionPickerView: React.FC<EmotionPickerViewProps> = ({ onSelectEm
         <button
           id="btn-emotion-continue"
           onClick={handleContinue}
-          className="w-full sm:w-auto px-8 h-12 rounded bg-[#1C1C1E] text-white font-semibold text-sm flex items-center justify-center gap-2 hover:bg-black transition cursor-pointer shadow-xs active:scale-[0.99]"
+          className="w-full sm:w-auto px-8 h-12 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-bold text-sm flex items-center justify-center gap-2.5 transition cursor-pointer shadow-lg shadow-amber-950/50 active:scale-[0.99]"
         >
           <span>Curate Cultural Stories</span>
           <span className="material-symbols-outlined text-[18px]">arrow_forward</span>

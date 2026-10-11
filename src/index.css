@@ -1,36 +1,87 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-brand-blue: #2563eb;
+  --color-brand-sky: #38bdf8;
+  --color-brand-gold: #f59e0b;
+  --color-brand-amber: #d4af37;
+  --color-brand-dark: #070a12;
+  --color-brand-card: #0f172a;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-sans);
+    background-color: #070a12;
+    color: #f8fafc;
   }
 
   body {
     margin: 0;
     padding: 0;
-    background-color: #FDFCF8;
-    color: #1C1C1E;
+    background-color: #070a12;
+    color: #f8fafc;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Improved contrast defaults for headings and body */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    letter-spacing: -0.015em;
   }
 }
 
-/* Custom scrollbar */
+/* Premium Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #070a12;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(28, 28, 30, 0.15);
+  background: rgba(245, 158, 11, 0.25);
   border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(28, 28, 30, 0.25);
+  background: rgba(245, 158, 11, 0.45);
+}
+
+/* Luxury Glow & Accent Utilities */
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
+}
+
+.text-glow-sky {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+}
+
+.box-glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.2);
+}
+
+.box-glow-blue {
+  box-shadow: 0 0 40px -5px rgba(37, 99, 235, 0.25);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
