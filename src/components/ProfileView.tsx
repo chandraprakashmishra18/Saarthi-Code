@@ -41,8 +41,8 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80"
-              alt="Elena Rostova"
+              src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=300&q=80"
+              alt="Aditi Deshmukh"
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl object-cover border-2 border-white/[0.15] shadow-lg"
             />
             <span className="absolute -bottom-2 -right-2 px-2 py-0.5 rounded-lg bg-[#d4af37] text-[#080808] text-[11px] font-bold shadow-sm">
@@ -53,7 +53,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
           <div className="flex-1 text-center sm:text-left">
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
               <h1 className="font-serif font-bold text-2xl sm:text-3xl text-[#f5f5f5] tracking-tight">
-                Elena Rostova
+                Aditi Deshmukh
               </h1>
               <span className="material-symbols-outlined text-[#d4af37] text-[20px]">
                 verified
@@ -61,7 +61,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-[#9499a1] mb-4 font-light">
-              Solo Cultural Explorer & Architectural Sketcher • Based in Berlin & Jaipur
+              Solo Cultural Researcher & Architectural Sketcher • Based in Pune & Jaipur
             </p>
 
             {/* Quick Metrics */}
@@ -183,7 +183,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
                     {s.title}
                   </h4>
                 </div>
-                <span className="text-xs font-serif font-bold text-[#d4af37]">${s.price}</span>
+                <span className="text-xs font-serif font-bold text-[#d4af37]">₹{s.price.toLocaleString('en-IN')}</span>
               </div>
             </div>
           ))}
@@ -200,7 +200,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
                 The Geometry of Silence: Chand Baori
               </h4>
               <p className="text-xs text-[#9499a1] font-light">
-                Master Storyteller: Elias Thorne • 3 Badges Unlocked
+                Master Storyteller: Rudra Pratap Singh Shekhawat • 3 Badges Unlocked
               </p>
             </div>
 
@@ -209,7 +209,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
               className="px-4 py-2.5 rounded-2xl bg-[#d4af37] text-[#080808] text-xs font-bold hover:bg-[#e5c158] transition flex items-center gap-1.5 cursor-pointer shadow-md shadow-[#d4af37]/20 active:scale-98"
             >
               <span className="material-symbols-outlined text-[16px]">palette</span>
-              <span>View AI Comic Journal</span>
+              <span>View Illustrated Travelogue</span>
             </button>
           </div>
         </div>
