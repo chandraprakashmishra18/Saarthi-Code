@@ -56,14 +56,14 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
   const featuredStory = STORIES[0]; // Chand Baori
 
   return (
-    <div className="min-h-screen bg-[#FDFCF8] text-[#1C1C1E] pb-24 md:pb-16">
+    <div className="min-h-screen bg-[#070A12] text-slate-100 pb-24 md:pb-16">
       {/* Featured Hero Banner */}
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 pt-4 sm:pt-6">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative rounded-xl overflow-hidden shadow-sm border border-[rgba(28,28,30,0.1)] min-h-[380px] sm:min-h-[440px] flex flex-col justify-end p-6 sm:p-10 bg-white"
+          className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 min-h-[400px] sm:min-h-[460px] flex flex-col justify-end p-6 sm:p-10 bg-[#0A0E1A]"
         >
           {/* Background Hero Image */}
           <img
@@ -71,48 +71,48 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
             alt={featuredStory.title}
             className="absolute inset-0 w-full h-full object-cover opacity-80"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070A12] via-[#070A12]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070A12]/90 via-[#070A12]/40 to-transparent" />
 
           {/* Hero Content */}
           <div className="relative z-10 max-w-2xl text-white">
             <div className="flex flex-wrap items-center gap-2 mb-3">
-              <span className="font-mono text-[10px] uppercase tracking-[0.15em] px-3 py-1 rounded bg-[#B39029] text-white font-medium shadow-2xs">
+              <span className="font-mono text-[10px] uppercase tracking-[0.18em] px-3 py-1 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-bold shadow-md">
                 Featured Journey
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded bg-black/50 backdrop-blur-xs text-white border border-white/20">
+              <span className="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-lg bg-black/60 backdrop-blur-md text-white border border-white/20">
                 {featuredStory.location}
               </span>
               {womensSafetyActive && (
-                <span className="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded bg-emerald-950/60 border border-emerald-400/40 text-emerald-300 backdrop-blur-xs flex items-center gap-1 font-medium">
-                  <span className="material-symbols-outlined text-[13px]">verified_user</span>
+                <span className="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-lg bg-emerald-950/70 border border-emerald-400/50 text-emerald-300 backdrop-blur-md flex items-center gap-1 font-semibold">
+                  <span className="material-symbols-outlined text-[14px]">verified_user</span>
                   Verified Safe Solo
                 </span>
               )}
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-white tracking-tight mb-2 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight mb-2.5 leading-tight drop-shadow-md">
               {featuredStory.title}
             </h2>
 
-            <p className="text-xs sm:text-sm text-white/80 line-clamp-2 sm:line-clamp-3 mb-6 max-w-xl font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-200 line-clamp-2 sm:line-clamp-3 mb-6 max-w-xl font-normal leading-relaxed">
               {featuredStory.subtitle}
             </p>
 
             {/* Author Chip & CTA */}
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-white/20">
+            <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/15">
               <div className="flex items-center gap-3">
                 <img
                   src={featuredStory.authorGuide.avatar}
                   alt={featuredStory.authorGuide.name}
-                  className="w-10 h-10 rounded-full border border-[#B39029] object-cover"
+                  className="w-11 h-11 rounded-2xl border-2 border-amber-400 object-cover shadow-md"
                 />
                 <div>
-                  <div className="text-xs font-medium text-white flex items-center gap-1">
+                  <div className="text-sm font-semibold text-white flex items-center gap-1.5">
                     <span>By {featuredStory.authorGuide.name}</span>
-                    <span className="material-symbols-outlined text-[14px] text-[#B39029]">verified</span>
+                    <span className="material-symbols-outlined text-[16px] text-amber-400">verified</span>
                   </div>
-                  <div className="font-mono text-[10px] text-white/70">
+                  <div className="font-mono text-[11px] text-slate-300">
                     ★ {featuredStory.rating} ({featuredStory.reviewsCount} verified stories)
                   </div>
                 </div>
@@ -120,17 +120,17 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
 
               <div className="flex items-center gap-3">
                 <div className="text-right hidden sm:block">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-white/70 block">Experience from</span>
-                  <span className="text-lg font-serif font-semibold text-[#B39029]">₹{featuredStory.price.toLocaleString('en-IN')}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-slate-300 block">Experience from</span>
+                  <span className="text-xl font-serif font-bold text-amber-400">₹{featuredStory.price.toLocaleString('en-IN')}</span>
                 </div>
 
                 <button
                   id="btn-hero-explore"
                   onClick={() => onOpenStory(featuredStory)}
-                  className="px-6 py-3 rounded bg-white text-[#1C1C1E] font-semibold text-xs sm:text-sm hover:bg-[#faf8f2] transition shadow-xs active:scale-95 flex items-center gap-2 cursor-pointer"
+                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition shadow-lg shadow-amber-950/50 active:scale-95 flex items-center gap-2 cursor-pointer"
                 >
                   <span>Explore Narrative</span>
-                  <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  <span className="material-symbols-outlined text-[17px]">arrow_forward</span>
                 </button>
               </div>
             </div>
@@ -142,20 +142,20 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-8">
         {/* Active Emotions Pill Bar */}
         {selectedEmotions.length > 0 && (
-          <div className="mb-6 flex items-center gap-2 flex-wrap bg-white p-3.5 rounded-lg border border-[rgba(28,28,30,0.08)] shadow-2xs">
-            <span className="font-mono text-[10px] font-semibold text-[rgba(28,28,30,0.6)] uppercase tracking-wider flex items-center gap-1.5">
-              <span className="material-symbols-outlined text-[16px] text-[#B39029]">psychology</span>
+          <div className="mb-6 flex items-center gap-2.5 flex-wrap bg-[#0F172A]/70 backdrop-blur-xl p-3.5 rounded-2xl border border-white/10 shadow-lg">
+            <span className="font-mono text-xs font-semibold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-[18px] text-amber-400">psychology</span>
               Curated For:
             </span>
             {selectedEmotions.map(emotion => (
               <span
                 key={emotion}
-                className="font-mono text-[11px] px-2.5 py-0.5 rounded bg-[#faf8f2] text-[#B39029] border border-[rgba(28,28,30,0.1)] font-medium"
+                className="font-mono text-xs px-3 py-1 rounded-xl bg-amber-400/15 text-amber-300 border border-amber-400/30 font-semibold"
               >
                 #{emotion}
               </span>
             ))}
-            <span className="font-mono text-[10px] text-[rgba(28,28,30,0.5)] ml-auto hidden sm:inline uppercase">
+            <span className="font-mono text-[11px] text-slate-400 ml-auto hidden sm:inline uppercase">
               Stories tuned to your resonance
             </span>
           </div>
@@ -165,7 +165,7 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
           {/* Search Input */}
           <div className="relative flex-1 max-w-md">
-            <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[rgba(28,28,30,0.4)] text-[20px]">
+            <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">
               search
             </span>
             <input
@@ -174,12 +174,12 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search stepwells, royal curses, root bridges..."
-              className="w-full pl-10 pr-4 py-2.5 rounded-md bg-white border border-[rgba(28,28,30,0.12)] text-sm text-[#1C1C1E] placeholder-[rgba(28,28,30,0.4)] focus:outline-none focus:border-[#B39029] shadow-2xs transition"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#0F172A] border border-white/15 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 shadow-md transition"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[rgba(28,28,30,0.4)] hover:text-[#1C1C1E] text-xs"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white text-xs font-bold"
               >
                 ✕
               </button>
@@ -193,7 +193,7 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               value={selectedState}
               onChange={(e) => setSelectedState(e.target.value)}
               aria-label="Filter stories by state or region"
-              className="px-3.5 py-2.5 rounded-md bg-white border border-[rgba(28,28,30,0.12)] text-xs font-medium text-[#1C1C1E] focus:outline-none focus:border-[#B39029] cursor-pointer shadow-2xs"
+              className="px-3.5 py-2.5 rounded-xl bg-[#0F172A] border border-white/15 text-xs font-semibold text-white focus:outline-none focus:border-sky-400 cursor-pointer shadow-md"
             >
               <option value="all">All States & Regions</option>
               <option value="Rajasthan">Rajasthan (Deserts & Forts)</option>
@@ -205,9 +205,9 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
             <button
               id="btn-plan-custom-story"
               onClick={onStartCraftStory}
-              className="px-4 py-2.5 rounded-md bg-[#1C1C1E] text-white text-xs font-semibold hover:bg-black transition flex items-center gap-1.5 shadow-2xs whitespace-nowrap cursor-pointer"
+              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-lg shadow-blue-950/50 whitespace-nowrap cursor-pointer active:scale-95"
             >
-              <span className="material-symbols-outlined text-[16px]">edit_calendar</span>
+              <span className="material-symbols-outlined text-[17px]">edit_calendar</span>
               <span>Craft Itinerary</span>
             </button>
           </div>
@@ -220,10 +220,10 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               key={cat.id}
               id={`filter-cat-${cat.id}`}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition cursor-pointer ${
+              className={`px-4 py-2 rounded-xl text-xs font-medium whitespace-nowrap transition cursor-pointer ${
                 selectedCategory === cat.id
-                  ? 'bg-[#1C1C1E] text-white shadow-2xs'
-                  : 'bg-white text-[rgba(28,28,30,0.6)] border border-[rgba(28,28,30,0.08)] hover:text-[#1C1C1E] hover:border-[rgba(28,28,30,0.2)]'
+                  ? 'bg-gradient-to-r from-amber-500/25 to-sky-500/15 text-white border border-amber-400/50 font-bold shadow-md'
+                  : 'bg-[#0F172A]/70 text-slate-300 border border-white/10 hover:text-white hover:border-white/25 hover:bg-[#131E35]'
               }`}
             >
               {cat.label}
@@ -241,26 +241,26 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               transition={{ duration: 0.4, delay: index * 0.05 }}
               id={`story-card-${story.id}`}
               onClick={() => onOpenStory(story)}
-              className="group bg-white rounded-xl overflow-hidden border border-[rgba(28,28,30,0.08)] hover:border-[#B39029] shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col cursor-pointer"
+              className="group bg-[#0F172A]/85 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 hover:border-amber-400/50 hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] transition-all duration-300 flex flex-col cursor-pointer"
             >
               {/* Image Container */}
-              <div className="relative aspect-16/10 overflow-hidden bg-[#faf8f2]">
+              <div className="relative aspect-16/10 overflow-hidden bg-slate-950">
                 <img
                   src={story.heroImage}
                   alt={story.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out opacity-85"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-black/30" />
 
                 {/* Badges on Image */}
                 <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                  <span className="font-mono px-2 py-0.5 rounded text-[10px] font-medium bg-black/60 backdrop-blur-xs text-white border border-white/20">
+                  <span className="font-mono px-2 py-0.5 rounded-md text-[10px] font-semibold bg-black/60 backdrop-blur-md text-white border border-white/20">
                     {story.state}
                   </span>
                   {story.emotionTags.map(tag => (
                     <span 
                       key={tag} 
-                      className="font-mono px-2 py-0.5 rounded text-[10px] bg-black/60 backdrop-blur-xs text-[#B39029] border border-[#B39029]/50 font-medium"
+                      className="font-mono px-2 py-0.5 rounded-md text-[10px] bg-black/70 backdrop-blur-md text-amber-300 border border-amber-400/40 font-semibold"
                     >
                       #{tag}
                     </span>
@@ -268,12 +268,12 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
                 </div>
 
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
-                  <div className="flex items-center gap-1 font-medium font-mono text-[11px]">
-                    <span className="material-symbols-outlined text-[15px] text-[#B39029]">star</span>
+                  <div className="flex items-center gap-1 font-semibold font-mono text-[11px]">
+                    <span className="material-symbols-outlined text-[16px] text-amber-400">star</span>
                     <span>{story.rating}</span>
-                    <span className="text-white/70">({story.reviewsCount})</span>
+                    <span className="text-slate-300">({story.reviewsCount})</span>
                   </div>
-                  <span className="font-mono px-2 py-0.5 rounded bg-black/50 backdrop-blur-xs text-[10px] border border-white/20">
+                  <span className="font-mono px-2 py-0.5 rounded-md bg-black/60 backdrop-blur-md text-[10px] border border-white/20 text-slate-200">
                     {story.duration}
                   </span>
                 </div>
@@ -282,35 +282,35 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
               {/* Card Body */}
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif font-semibold text-xl text-[#1C1C1E] leading-snug group-hover:text-[#B39029] transition-colors mb-1.5">
+                  <h3 className="font-serif font-bold text-xl text-white leading-snug group-hover:text-amber-300 transition-colors mb-2">
                     {story.title}
                   </h3>
-                  <p className="text-xs text-[rgba(28,28,30,0.65)] line-clamp-2 leading-relaxed mb-4 font-normal">
+                  <p className="text-xs sm:text-sm text-slate-300 line-clamp-2 leading-relaxed mb-4 font-normal">
                     {story.subtitle}
                   </p>
                 </div>
 
                 {/* Footer Guide info & Price */}
-                <div className="pt-3 border-t border-[rgba(28,28,30,0.06)] flex items-center justify-between">
-                  <div className="flex items-center gap-2">
+                <div className="pt-3.5 border-t border-white/10 flex items-center justify-between">
+                  <div className="flex items-center gap-2.5">
                     <img
                       src={story.authorGuide.avatar}
                       alt={story.authorGuide.name}
-                      className="w-7 h-7 rounded-full object-cover border border-[rgba(28,28,30,0.12)]"
+                      className="w-8 h-8 rounded-full object-cover border border-amber-400/60"
                     />
-                    <div className="text-[11px]">
-                      <span className="font-medium text-[#1C1C1E] block leading-none">
+                    <div className="text-xs">
+                      <span className="font-semibold text-white block leading-tight">
                         {story.authorGuide.name}
                       </span>
-                      <span className="font-mono text-[9px] text-[rgba(28,28,30,0.5)]">
+                      <span className="font-mono text-[10px] text-slate-400">
                         {story.authorGuide.badge}
                       </span>
                     </div>
                   </div>
 
                   <div className="text-right">
-                    <span className="font-mono text-[9px] uppercase tracking-wider text-[rgba(28,28,30,0.5)] block leading-none">Story from</span>
-                    <span className="text-base font-serif font-semibold text-[#1C1C1E]">
+                    <span className="font-mono text-[9px] uppercase tracking-wider text-slate-400 block leading-none mb-0.5">Story from</span>
+                    <span className="text-base sm:text-lg font-serif font-bold text-amber-400">
                       ₹{story.price.toLocaleString('en-IN')}
                     </span>
                   </div>
@@ -321,15 +321,15 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
         </div>
 
         {/* Story Collections Banner CTA */}
-        <div className="mt-12 p-6 sm:p-8 rounded-xl bg-white border border-[rgba(28,28,30,0.08)] flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xs">
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#0F172A] via-[#131E35] to-[#0F172A] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="max-w-xl">
-            <span className="font-mono text-[10px] uppercase tracking-[0.15em] px-3 py-1 bg-[#FDFCF8] border border-[rgba(28,28,30,0.12)] text-[#B39029] rounded font-medium inline-block mb-3">
+            <span className="font-mono text-[10px] uppercase tracking-[0.18em] px-3 py-1 bg-amber-500/15 border border-amber-400/30 text-amber-300 rounded-lg font-semibold inline-block mb-3">
               Editor’s Anthology
             </span>
-            <h3 className="text-2xl sm:text-3xl font-serif font-semibold text-[#1C1C1E] mb-2">
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2">
               Curated Thematic Story Collections
             </h3>
-            <p className="text-xs sm:text-sm text-[rgba(28,28,30,0.65)] leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
               Explore journeys grouped by theme: Monsoon Magic in Kerala, 400 Years of Old Delhi Food Lore, and Sacred Living Root Trails.
             </p>
           </div>
@@ -338,14 +338,14 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
             <button
               id="btn-banner-view-collections"
               onClick={onOpenCollections}
-              className="px-5 py-2.5 rounded bg-[#1C1C1E] text-white text-xs sm:text-sm font-semibold hover:bg-black transition shadow-2xs cursor-pointer"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 text-xs sm:text-sm font-bold transition shadow-lg shadow-amber-950/50 cursor-pointer"
             >
               Browse Collections
             </button>
             <button
               id="btn-banner-view-guides"
               onClick={onOpenGuides}
-              className="px-5 py-2.5 rounded bg-white border border-[rgba(28,28,30,0.12)] text-xs sm:text-sm font-medium text-[#1C1C1E] hover:bg-[#faf8f2] transition cursor-pointer"
+              className="px-5 py-2.5 rounded-xl bg-white/[0.06] border border-white/15 text-xs sm:text-sm font-semibold text-white hover:bg-white/[0.12] transition cursor-pointer"
             >
               Meet Storytellers
             </button>
