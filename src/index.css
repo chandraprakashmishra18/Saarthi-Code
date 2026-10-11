@@ -40,6 +40,47 @@
   }
 }
 
+/* =========================================================================
+   GLOBAL TEXT CONTRAST & READABILITY ENHANCEMENTS (WCAG AAA)
+   Ensures all secondary metadata, captions, and paragraphs are crystal clear
+   ========================================================================= */
+.text-\[\#9499a1\],
+[class*="text-[#9499a1]"] {
+  color: #cbd5e1 !important; /* High-contrast crisp slate-300 */
+}
+
+.text-\[\#a1a1aa\],
+[class*="text-[#a1a1aa]"] {
+  color: #e2e8f0 !important; /* Clear readable slate-200 */
+}
+
+.text-\[\#d1d5db\],
+[class*="text-[#d1d5db]"] {
+  color: #f1f5f9 !important; /* Bright readable slate-100 */
+}
+
+.text-\[\#f5f5f5\],
+[class*="text-[#f5f5f5]"] {
+  color: #ffffff !important; /* Pure brilliant white */
+}
+
+/* Upgrade thin/faint font styles to crisp, readable weight */
+.font-light {
+  font-weight: 400 !important;
+}
+
+/* Solidify ultra-thin transparent glass cards into luxury deep-slate surfaces */
+.bg-white\/\[0\.03\],
+.bg-white\/\[0\.04\] {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.border-white\/\[0\.08\],
+.border-white\/\[0\.06\] {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
 /* Premium Custom scrollbar */
 ::-webkit-scrollbar {
   width: 7px;

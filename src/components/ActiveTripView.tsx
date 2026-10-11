@@ -298,13 +298,13 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
                     isCurrent
                       ? 'bg-[#d4af37]/15 border-[#d4af37] text-white shadow-md'
                       : isPast
-                      ? 'bg-white/[0.03] border-white/[0.08] text-[#a1a1aa] hover:border-white/20'
-                      : 'bg-white/[0.01] border-white/[0.05] text-[#6b7280] hover:border-white/10'
+                      ? 'bg-white/[0.04] border-white/10 text-slate-200 hover:border-white/20'
+                      : 'bg-white/[0.02] border-white/[0.08] text-slate-400 hover:border-white/15'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className={`text-[10px] font-bold uppercase tracking-wider ${
-                      isCurrent ? 'text-[#d4af37]' : isPast ? 'text-emerald-400' : 'text-[#6b7280]'
+                      isCurrent ? 'text-[#d4af37]' : isPast ? 'text-emerald-400' : 'text-slate-400'
                     }`}>
                       Day {dayNum}
                     </span>
@@ -315,11 +315,11 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
                       <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-ping"></span>
                     )}
                     {isUpcoming && (
-                      <span className="material-symbols-outlined text-[14px] text-[#4b5563]">schedule</span>
+                      <span className="material-symbols-outlined text-[14px] text-slate-400">schedule</span>
                     )}
                   </div>
                   <p className={`text-xs font-serif font-semibold truncate ${
-                    isCurrent ? 'text-[#f5f5f5]' : isPast ? 'text-[#d1d5db]' : 'text-[#9ca3af]'
+                    isCurrent ? 'text-white' : isPast ? 'text-slate-200' : 'text-slate-300'
                   }`}>
                     {day.location || `Stop ${dayNum}`}
                   </p>
@@ -341,12 +341,12 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
                     isCurrent
                       ? 'bg-[#d4af37]/15 border-[#d4af37] text-white'
                       : isPast
-                      ? 'bg-white/[0.03] border-white/[0.08] text-[#a1a1aa]'
-                      : 'bg-white/[0.01] border-white/[0.05] text-[#6b7280]'
+                      ? 'bg-white/[0.04] border-white/10 text-slate-200'
+                      : 'bg-white/[0.02] border-white/[0.08] text-slate-400'
                   }`}
                 >
                   <span className="text-[10px] font-bold uppercase block text-[#d4af37]">Day {dayNum}</span>
-                  <p className="text-xs truncate font-medium">Itinerary Stop {dayNum}</p>
+                  <p className="text-xs truncate font-medium text-slate-200">Itinerary Stop {dayNum}</p>
                 </button>
               );
             })
@@ -648,7 +648,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
                     e.stopPropagation();
                     setPackingList((prev) => prev.filter((p) => p.id !== item.id));
                   }}
-                  className="p-1 rounded-lg text-[#6b7280] hover:text-rose-400 transition cursor-pointer"
+                  className="p-1 rounded-lg text-slate-400 hover:text-rose-400 transition cursor-pointer"
                   title="Remove item"
                 >
                   <span className="material-symbols-outlined text-[16px]">close</span>
@@ -658,7 +658,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
           ))}
 
           {filteredPackingItems.length === 0 && (
-            <div className="py-6 text-center text-xs text-[#6b7280]">
+            <div className="py-6 text-center text-xs text-slate-400">
               No items in this category. Use the form below to add one.
             </div>
           )}
