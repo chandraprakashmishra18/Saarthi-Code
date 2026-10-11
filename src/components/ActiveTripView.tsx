@@ -27,7 +27,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
     try {
       return localStorage.getItem(`saarthi_trip_notes_${tripPlan.id || 'active'}`) || 
              sessionStorage.getItem(`saarthi_trip_notes_${tripPlan.id || 'active'}`) || 
-             '• Stop at the blue courtyard haveli for cold saffron lassi.\n• Revisit the 4th subterranean level near sunset for architectural shadow photography.\n• Ask Elias about the 16th-century stone carver mark on the south pillar.';
+             '• Stop at the blue courtyard haveli for cold saffron lassi.\n• Revisit the 4th subterranean level near sunset for architectural shadow photography.\n• Ask Rudra Pratap about the 9th-century stone carver mark on the south pillar.';
     } catch {
       return '';
     }
@@ -125,18 +125,18 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
     dayNumber: clampedDay,
     title: 'The Subterranean Descent: Chand Baori',
     location: 'Abhaneri Village, Rajasthan',
-    guideName: 'Elias Thorne',
-    guideAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
-    price: 150,
-    description: 'Meet Elias at the 9th-century gate for blueprint decoding and subterranean stepwell walk.',
+    guideName: 'Rudra Pratap Singh',
+    guideAvatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
+    price: 2400,
+    description: 'Meet Rudra Pratap at the 9th-century gate for blueprint decoding and subterranean stepwell walk.',
     image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80',
     time: '08:30 AM - 02:00 PM',
     includedActivity: 'Private Stepwell Descent & Blueprint Study'
   };
 
   const [chatMessages, setChatMessages] = useState<string[]>([
-    `${activeDayData.guideName}: "Namaste Elena! I have reached the ${activeDayData.location} gate. Saffron tea is ready in terracotta cups!"`,
-    'Elena: "On my way! Just arriving at the courtyard."'
+    `${activeDayData.guideName}: "Namaste Aditi! I have reached the ${activeDayData.location} gate. Saffron tea is ready in fresh terracotta kulhads!"`,
+    'Aditi: "On my way Rudra-ji! Just arriving at the courtyard haveli."'
   ]);
   const [newChatText, setNewChatText] = useState('');
 
@@ -188,7 +188,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
   const handleSendChat = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newChatText.trim()) return;
-    setChatMessages([...chatMessages, `Elena: "${newChatText}"`]);
+    setChatMessages([...chatMessages, `Aditi: "${newChatText}"`]);
     setNewChatText('');
 
     setTimeout(() => {
@@ -485,18 +485,18 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
               </h4>
             </div>
             <p className="text-xs text-[#9499a1] mb-3 font-light">
-              Aanya & Chloe are currently exploring {activeDayData.location.split(',')[0]}’s heritage route. Connect for shared chai or joint photos.
+              Aanya & Pooja are currently exploring {activeDayData.location.split(',')[0]}’s heritage route. Connect for shared kulhad chai or joint photo walks.
             </p>
 
             <div className="flex items-center gap-2 mb-2">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80"
                 alt="Aanya"
                 className="w-8 h-8 rounded-full border-2 border-[#d4af37] object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                alt="Chloe"
+                src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=100&q=80"
+                alt="Pooja"
                 className="w-8 h-8 rounded-full border-2 border-[#d4af37] object-cover -ml-3"
               />
               <span className="text-[11px] font-medium text-emerald-400 whitespace-nowrap">
@@ -819,7 +819,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
             Finished exploring {activeDayData.location.split(',')[0]}?
           </h3>
           <p className="text-xs text-[#9499a1] font-light">
-            Generate your personalized 4-panel AI Graphic Travelogue Comic & claim Badges.
+            Generate your personalized 4-panel Illustrated Heritage Travelogue & claim Badges.
           </p>
         </div>
 
@@ -829,7 +829,7 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
           className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-[#d4af37] hover:bg-[#e5c158] text-[#080808] font-serif font-bold text-xs sm:text-sm transition shadow-lg shadow-[#d4af37]/20 active:scale-95 whitespace-nowrap cursor-pointer flex items-center justify-center gap-2"
         >
           <span className="material-symbols-outlined text-[18px]">palette</span>
-          <span>Generate AI Comic Journal</span>
+          <span>Generate Illustrated Travelogue</span>
         </button>
       </div>
 
@@ -838,14 +838,14 @@ export const ActiveTripView: React.FC<ActiveTripViewProps> = ({
         <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4">
           <div className="bg-[#121212]/90 backdrop-blur-2xl text-white rounded-3xl max-w-sm w-full p-8 text-center border border-white/[0.09] shadow-2xl">
             <img
-              src={activeDayData.guideAvatar || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'}
+              src={activeDayData.guideAvatar || 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80'}
               alt={activeDayData.guideName}
               className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-[#d4af37] mb-4 animate-pulse"
             />
             <h3 className="font-serif font-bold text-xl text-[#f5f5f5] mb-1">{activeDayData.guideName}</h3>
             <p className="text-xs text-emerald-400 mb-6">Connected • Live Voice Stream</p>
             <p className="text-xs text-[#a1a1aa] font-serif italic mb-8">
-              “Elena, I see you near the {activeDayData.location.split(',')[0]} archway! Look left toward the red sandstone pavilion.”
+              “Aditi, I see you near the {activeDayData.location.split(',')[0]} archway! Look left toward the red sandstone pavilion.”
             </p>
             <button
               onClick={() => setGuideCallActive(false)}

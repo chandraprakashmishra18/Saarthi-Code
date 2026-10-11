@@ -311,7 +311,7 @@ export const StoryDiscoveryView: React.FC<StoryDiscoveryViewProps> = ({
                   <div className="text-right">
                     <span className="font-mono text-[9px] uppercase tracking-wider text-[rgba(28,28,30,0.5)] block leading-none">Story from</span>
                     <span className="text-base font-serif font-semibold text-[#1C1C1E]">
-                      ${story.price}
+                      ₹{story.price.toLocaleString('en-IN')}
                     </span>
                   </div>
                 </div>

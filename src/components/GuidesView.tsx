@@ -161,7 +161,7 @@ export const GuidesView: React.FC<GuidesViewProps> = ({
                 <div>
                   <span className="text-[10px] text-[#9499a1] block font-light">Day Fee</span>
                   <span className="text-lg font-serif font-bold text-[#d4af37]">
-                    ${guide.pricePerDay} <span className="text-xs font-sans text-[#9499a1] font-normal">/ day</span>
+                    ₹{guide.pricePerDay.toLocaleString('en-IN')} <span className="text-xs font-sans text-[#9499a1] font-normal">/ day</span>
                   </span>
                 </div>
 

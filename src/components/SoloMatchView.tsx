@@ -241,7 +241,7 @@ export const SoloMatchView: React.FC<SoloMatchViewProps> = ({
 
           <div className="space-y-2 mb-4 max-h-48 overflow-y-auto text-xs">
             <div className="p-3 rounded-2xl bg-white/[0.04] backdrop-blur-md text-[#f5f5f5] max-w-sm border border-white/[0.08] leading-relaxed font-light">
-              {selectedUserForChat.name}: "Hey Elena! Saw you are also visiting Chand Baori stepwell. Would love to swap notes on the subterranean photo angles!"
+              {selectedUserForChat.name}: "Namaste Aditi! Saw you are also exploring this heritage route today. Would love to swap notes on subterranean photo angles over a cup of chai!"
             </div>
             {(sentMessages[selectedUserForChat.id] || []).map((msg, i) => (
               <div key={i} className="p-3 rounded-2xl bg-[#d4af37]/15 backdrop-blur-md border border-[#d4af37]/40 text-[#d4af37] max-w-sm ml-auto text-right font-medium">
