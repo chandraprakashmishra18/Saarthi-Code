@@ -61,11 +61,13 @@ export interface StoryItem {
   languages: string[];
   price: number;
   authorGuide: {
+    id?: string;
     name: string;
     title: string;
     avatar: string;
     badge: string;
     rating: number;
+    bio?: string;
   };
   dropCapStory: {
     dropLetter: string;
