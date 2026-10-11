@@ -65,25 +65,27 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 142,
     duration: '3.5 Hours',
     groupSize: 'Max 6 Explorers',
-    languages: ['English', 'Hindi', 'Marwari'],
-    price: 120,
+    languages: ['Hindi', 'English', 'Marwari'],
+    price: 2400,
     authorGuide: {
-      name: 'Elias Thorne',
-      title: 'Architectural Historian & 15-Yr Heritage Guide',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+      id: 'rudra-pratap',
+      name: 'Rudra Pratap Singh Shekhawat',
+      title: 'Architectural Historian & 15-Yr ASI Heritage Guide',
+      avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
       badge: 'Master Storyteller',
-      rating: 4.98
+      rating: 4.98,
+      bio: 'Specialist in 9th-century subterranean hydro-engineering and Rajput celestial astronomy. Rudra Pratap has authored two research monographs on Rajasthani stepwells.'
     },
     dropCapStory: {
       dropLetter: 'B',
-      firstParagraph: 'eneath the arid Thar dust in the tiny forgotten village of Abhaneri lies an inverted pyramid of 3,500 narrow steps. Built in the 9th century by King Chanda of the Nikumbha Dynasty, Chand Baori was engineered not merely for survival, but as a temple of water where the air cools by five degrees for every tier you descend.',
-      secondParagraph: 'Local folklore whispers that spirits built the steps in a single moonless night so no mortal could retrieve a fallen coin. As shadows shift across the symmetrical stone steps, you realize you are standing at the intersection of celestial mathematics and subterranean devotion.',
+      firstParagraph: 'eneath the arid Thar dust in the tiny village of Abhaneri lies an inverted pyramid of 3,500 hand-carved stone steps. Commissioned in the 9th century by King Chanda of the Nikumbha Dynasty, Chand Baori was engineered not merely for water harvesting, but as a cool subterranean palace where the air temperature drops by five degrees for every tier you descend.',
+      secondParagraph: 'Local folklore whispers that spirits carved the steps in a single moonless night so no mortal could retrieve a fallen coin. As shadows shift across the symmetrical stone steps under morning sun, you realize you stand at the sacred intersection of Vedic geometry and desert devotion.',
       quote: '“To descend here is to shed the noise of the surface world, step by mathematical step.”'
     },
     sights: [
       {
         title: 'The 3,500 Steps',
-        description: 'Perfect geometric terraces plunging 13 stories into emerald depths.',
+        description: 'Terraced triangular flights plunging 13 stories into emerald depths.',
         image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=500&q=80'
       },
       {
@@ -92,8 +94,8 @@ export const STORIES: StoryItem[] = [
         image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=500&q=80'
       },
       {
-        title: 'The Dark Waters',
-        description: 'The sacred pool reflecting centuries of monsoons and celestial star alignments.',
+        title: 'The Sacred Stepwell Basin',
+        description: 'The cool natural aquifer reflecting centuries of monsoon rains and desert starlight.',
         image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=500&q=80'
       }
     ],
@@ -101,19 +103,19 @@ export const STORIES: StoryItem[] = [
       {
         time: '08:30 AM',
         title: 'Arrival at Abhaneri Village Gate',
-        description: 'Morning chai with local potters and briefing on 9th-century hydro-engineering.',
+        description: 'Morning masala chai in terracotta kulhads with local potters and briefing on 9th-century hydrology.',
         icon: 'local_cafe'
       },
       {
         time: '09:15 AM',
-        title: 'The First Glimpse from Above',
-        description: 'Deciphering the optical illusions of the step symmetry under early sun rays.',
+        title: 'The First Descent from Above',
+        description: 'Deciphering the optical illusions of the step symmetry under early sun rays with Rudra Pratap.',
         icon: 'visibility'
       },
       {
         time: '10:30 AM',
         title: 'The Subterranean Walk',
-        description: 'Descending to the mid-tier pavilion to examine sacred stone inscriptions.',
+        description: 'Descending to the royal mid-tier pavilion to examine sacred sandstone inscriptions.',
         icon: 'stairs'
       },
       {
@@ -124,7 +126,7 @@ export const STORIES: StoryItem[] = [
       }
     ],
     inclusions: [
-      'Certified Heritage Historian accompaniment',
+      'Certified ASI Heritage Historian accompaniment',
       'Exclusive architectural blueprint & magnifying loupe',
       'Artisanal masala chai & organic saffron sweets',
       'All monument entry permissions & conservation permits'
@@ -133,7 +135,7 @@ export const STORIES: StoryItem[] = [
   },
   {
     id: 'bhangarh-ruins',
-    title: 'The Whispers of the Abandoned Palace: Bhangarh',
+    title: 'The Whispers of the Abandoned Citadel: Bhangarh',
     subtitle: 'The 16th-century royal capital cursed before sundown, preserved in stony silence.',
     location: 'Alwar, Rajasthan',
     state: 'Rajasthan',
@@ -144,20 +146,22 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 98,
     duration: '4 Hours',
     groupSize: 'Max 8 Explorers',
-    languages: ['English', 'Hindi'],
-    price: 95,
+    languages: ['Hindi', 'English', 'Rajasthani'],
+    price: 1850,
     authorGuide: {
-      name: 'Maya Lin',
-      title: 'Folklore Anthroplogist & Desert Explorer',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+      id: 'rudra-pratap',
+      name: 'Rudra Pratap Singh Shekhawat',
+      title: 'Folklore Anthropologist & Fort Historian',
+      avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
       badge: 'Verified Explorer',
-      rating: 4.95
+      rating: 4.95,
+      bio: 'Documenting the oral legends of the Aravallis for 15 years, verifying court edicts and folklore with local village elders.'
     },
     dropCapStory: {
       dropLetter: 'S',
-      firstParagraph: 'tanding at the foot of the Aravalli hills, the royal city of Bhangarh was founded in 1573. It was once a vibrant metropolis of banyan-shaded bazaars, perfumeries, and seven-tiered palaces until a sorcerer’s unrequited love and royal curse brought its overnight desertion.',
-      secondParagraph: 'The Archaeological Survey of India forbids anyone to remain within the fort after sunset. By daylight, however, the ruined havelis whisper forgotten songs through the desert breeze.',
-      quote: '“The ruins don’t hold ghosts; they hold memories too grand for modern walls.”'
+      firstParagraph: 'tanding at the foot of the Aravalli hills, the royal fortified town of Bhangarh was founded in 1573 by Bhagwant Das. It was once a vibrant metropolis of banyan-shaded bazaars, perfumeries, and seven-tiered palaces until a court sorcerer’s unrequited obsession brought its legendary desertion.',
+      secondParagraph: 'The Archaeological Survey of India strictly forbids entry after sunset. By daylight, however, the ruined havelis whisper forgotten songs through the desert breeze and ancient keekar branches.',
+      quote: '“The ruins do not hold ghosts; they hold memories too grand for modern walls.”'
     },
     sights: [
       {
@@ -180,25 +184,25 @@ export const STORIES: StoryItem[] = [
       {
         time: '02:00 PM',
         title: 'Gates of Bhangarh Entrance',
-        description: 'Meeting Maya at the Hanuman temple gate with folklore manuscripts.',
+        description: 'Meeting Rudra Pratap at the Hanuman temple gate with folklore manuscripts.',
         icon: 'meeting_room'
       },
       {
         time: '03:30 PM',
         title: 'Walking the Lost Street of Perfumers',
-        description: 'Reading original court poetry detailing ancient trade routes.',
+        description: 'Reading court chronicles detailing ancient trade routes between Amber and Delhi.',
         icon: 'menu_book'
       },
       {
         time: '05:00 PM',
         title: 'Sunset at Gopinath Temple',
-        description: 'Golden hour photography before dusk gates close strictly.',
+        description: 'Golden hour photography before dusk gates close strictly as per ASI norms.',
         icon: 'wb_twilight'
       }
     ],
     inclusions: [
-      'Folklore Anthropologist guide',
-      'Safety escort with high-lumen torches',
+      'ASI Accredited Heritage Guide',
+      'Safety escort with medical support kit',
       'Heritage map parchment keepsake',
       'Transportation from Alwar'
     ]
@@ -216,20 +220,22 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 210,
     duration: '3 Hours',
     groupSize: 'Max 6 Explorers',
-    languages: ['English', 'Hindi', 'French'],
-    price: 85,
+    languages: ['Hindi', 'English', 'Marwari'],
+    price: 1650,
     authorGuide: {
-      name: 'Rajesh Kumar',
-      title: '7th-Gen Blue City Resident & Historian',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+      id: 'rajeshwar-sharma',
+      name: 'Pandit Rajeshwar Sharma',
+      title: '7th-Gen Blue City Resident & Heritage Archivist',
+      avatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
       badge: 'Guild Elder',
-      rating: 4.96
+      rating: 4.96,
+      bio: 'Born in a 250-year-old Navchokiya haveli. Pandit Rajeshwar unlocks private royal recipe scrolls and artisan guilds that tourists never find on maps.'
     },
     dropCapStory: {
       dropLetter: 'I',
-      firstParagraph: 'n the shadow of Mehrangarh Fort lies Navchokiya, a maze where every wall is dipped in copper sulfate and limestone blue. The color repels the desert heat, deters mosquitoes, and marks the homes of the royal astrologers.',
-      secondParagraph: 'Walking these twisting stepped corridors with Rajesh, you meet 4th-generation tie-and-dye masters and drink saffron-spiced lassi prepared in earthen urns.',
-      quote: '“Every blue door opens to a family whose ancestors cooked for the Maharajas.”'
+      firstParagraph: 'n the shadow of Mehrangarh Fort lies Navchokiya, a maze where every lime-plaster wall is washed in copper sulfate and indigo blue. The natural formulation repels desert heat, deters scorpions, and historically marked the dwellings of the royal astrologers.',
+      secondParagraph: 'Walking these twisting stepped corridors with Pandit Rajeshwar, you meet 4th-generation tie-and-dye bandhani masters and drink saffron-spiced makhaniya lassi churned in earthen urns.',
+      quote: '“Every blue doorway opens to a family whose ancestors cooked for the Maharajas.”'
     },
     sights: [
       {
@@ -258,13 +264,13 @@ export const STORIES: StoryItem[] = [
       {
         time: '08:45 AM',
         title: 'The Indigo Alleys Walk',
-        description: 'Discovering hidden stepwells and 200-year-old door carvings.',
+        description: 'Discovering hidden stepwells and 200-year-old door carvings with Pandit Rajeshwar.',
         icon: 'directions_walk'
       },
       {
         time: '10:00 AM',
         title: 'Tea on a Brahmin Terrace',
-        description: 'Enjoying freshly fried kachoris overlooking the azure cityscape.',
+        description: 'Enjoying freshly fried pyaaz kachoris overlooking the azure cityscape.',
         icon: 'deck'
       }
     ],
@@ -287,24 +293,26 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 165,
     duration: '6 Hours',
     groupSize: 'Max 4 Explorers',
-    languages: ['English', 'Khasi', 'Hindi'],
-    price: 145,
+    languages: ['Khasi', 'English', 'Hindi'],
+    price: 2800,
     authorGuide: {
-      name: 'Maya Lin',
-      title: 'Botanist & Rainforest Guide',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+      id: 'baphilinia-nongkynrih',
+      name: 'Dr. Baphilinia Nongkynrih',
+      title: 'Ethnobotanist & Khasi Living Architecture Specialist',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
       badge: 'Eco Pioneer',
-      rating: 5.0
+      rating: 5.0,
+      bio: 'Ethnobotanist who spent 8 years documenting the bio-engineering of Ficus elastica root bridges with Khasi elders. Leads slow, respectful cloud-forest expeditions.'
     },
     dropCapStory: {
       dropLetter: 'F',
-      firstParagraph: 'or centuries, the indigenous Khasi and Jaintia tribes of Meghalaya have nurtured Ficus elastica roots across roaring monsoon rivers. Unlike stone or concrete, these bridges grow stronger with time, enduring the heaviest rainfall on Earth for over 500 years.',
-      secondParagraph: 'Walking across the double-decker root bridge of Nongriat is an initiation into how humanity can build in symbiotic harmony with wild nature.',
+      firstParagraph: 'or centuries, the indigenous Khasi and Jaintia clans of Meghalaya have nurtured Ficus elastica roots across roaring monsoon rivers. Unlike timber or concrete bridges that deteriorate in torrential rain, these living structures grow stronger over generations, enduring 500 years of the heaviest downpours on Earth.',
+      secondParagraph: 'Walking across the double-decker living root bridge of Nongriat is an initiation into how humanity can build in symbiotic harmony with wild nature.',
       quote: '“We do not construct our bridges; we whisper to the trees for two generations.”'
     },
     sights: [
       {
-        title: 'The Double Decker Bridge',
+        title: 'The Double Decker Bridge (Jingkieng Nongriat)',
         description: 'Two tiers of live fig tree roots straddling a crystal blue natural lagoon.',
         image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=500&q=80'
       },
@@ -314,8 +322,8 @@ export const STORIES: StoryItem[] = [
         image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=500&q=80'
       },
       {
-        title: 'Sacred Forest Grove',
-        description: 'Centuries-old protected forest where picking a single leaf is forbidden by tribal law.',
+        title: 'Sacred Forest Grove (Law Kyntang)',
+        description: 'Centuries-old protected forest where taking a single twig is forbidden by tribal custom.',
         image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=500&q=80'
       }
     ],
@@ -329,18 +337,18 @@ export const STORIES: StoryItem[] = [
       {
         time: '09:00 AM',
         title: 'Nongriat Living Bridge Sanctuary',
-        description: 'Observing the aerial root scaffolding and meeting local elder bridge keepers.',
+        description: 'Observing aerial root scaffolding with Dr. Baphilinia and meeting elder bridge guardians.',
         icon: 'nature'
       },
       {
         time: '11:30 AM',
         title: 'Natural Spring Swim & Bamboo Meal',
-        description: 'Fresh organic rice and mountain greens cooked inside hollow bamboo.',
+        description: 'Fresh organic hill rice and local greens cooked inside hollow bamboo cylinders.',
         icon: 'restaurant'
       }
     ],
     inclusions: [
-      'Certified Khasi tribal naturalist guide',
+      'Certified Khasi tribal naturalist & ethnobotanist guide',
       'Handcrafted bamboo trekking staff',
       'Organic tribal farm luncheon',
       'Forest conservation community levy'
@@ -359,30 +367,32 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 184,
     duration: '5 Hours',
     groupSize: 'Max 6 Explorers',
-    languages: ['English', 'Malayalam', 'Hindi'],
-    price: 110,
+    languages: ['Malayalam', 'English', 'Hindi'],
+    price: 2200,
     authorGuide: {
-      name: 'Elias Thorne',
-      title: 'Coastal Heritage & Spice Route Historian',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      badge: 'Master Storyteller',
-      rating: 4.98
+      id: 'unnikrishnan-nair',
+      name: 'K. P. Unnikrishnan Nair',
+      title: 'Kuttanad Canal Master & Backwater Oral Historian',
+      avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+      badge: 'Maritime Elder',
+      rating: 4.98,
+      bio: 'Son of a traditional wooden boatbuilder from Kuttanad. Unnikrishnan leads canal voyages tracing ancient spice trade routes and below-sea-level farming.'
     },
     dropCapStory: {
       dropLetter: 'G',
-      firstParagraph: 'entle ripples part as the wooden prow of a cedar-and-coir kettuvallam slips past floating lotus fields. In these labyrinthine canals below sea level, time has kept the rhythm of the tide for Roman, Arab, and Dutch spice traders alike.',
-      secondParagraph: 'Hear the songs of the duck herders, learn the culinary alchemy of roasted pepper and fresh coconut milk, and watch kingfishers dive into the backwaters.',
+      firstParagraph: 'entle ripples part as the wooden prow of a cedar-and-coir kettuvallam slips past floating lotus fields. In these labyrinthine canals below sea level, time has kept the rhythm of the tide for Roman, Arab, and Dutch spice merchants alike.',
+      secondParagraph: 'Hear the songs of the duck herders, learn the culinary alchemy of Malabar black pepper and fresh coconut milk, and watch kingfishers dive into the emerald lagoons.',
       quote: '“On the backwaters, the river is both your road and your reflection.”'
     },
     sights: [
       {
         title: 'Kettuvallam Woodcraft Guild',
-        description: 'Discovering how 100-foot boats are bound entirely by coconut fiber without a single nail.',
+        description: 'Discovering how 100-foot boats are bound entirely by coconut fiber without a single iron nail.',
         image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=500&q=80'
       },
       {
         title: 'Paddy Fields Below Sea Level',
-        description: 'The ancient Kuttanad farming marvel of cultivating rice four to ten feet below the sea.',
+        description: 'The ancient Kuttanad farming marvel of cultivating rice four to ten feet below sea level.',
         image: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=500&q=80'
       },
       {
@@ -395,13 +405,13 @@ export const STORIES: StoryItem[] = [
       {
         time: '07:00 AM',
         title: 'Boarding the Traditional Cedar Boat',
-        description: 'Morning tea with steamed banana cakes as mist lifts from the lagoons.',
+        description: 'Morning cardamom tea with steamed banana cakes as mist lifts from the lagoons.',
         icon: 'sailing'
       },
       {
         time: '09:00 AM',
         title: 'Canal Village Walking Exchange',
-        description: 'Visiting coir rope weavers and riverside spice gardens.',
+        description: 'Visiting coir rope weavers and riverside spice gardens with Unnikrishnan.',
         icon: 'cottage'
       },
       {
@@ -415,7 +425,7 @@ export const STORIES: StoryItem[] = [
       'Private traditional solar-assisted canoe',
       'Authentic banana leaf feast on board',
       'Fresh tender coconut refreshments',
-      'Local backwater community tip fund'
+      'Local backwater community development fund'
     ]
   },
   {
@@ -431,19 +441,21 @@ export const STORIES: StoryItem[] = [
     reviewsCount: 320,
     duration: '3.5 Hours',
     groupSize: 'Max 8 Explorers',
-    languages: ['English', 'Hindi', 'Urdu'],
-    price: 75,
+    languages: ['Hindi', 'Urdu', 'English'],
+    price: 1450,
     authorGuide: {
-      name: 'Rajesh Kumar',
-      title: 'Mughal Culinary Chronicler',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+      id: 'rajeshwar-sharma',
+      name: 'Pandit Rajeshwar Sharma',
+      title: 'Shahjahanabad Culinary Chronicler',
+      avatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
       badge: 'Culinary Master',
-      rating: 4.96
+      rating: 4.96,
+      bio: 'Archivist of 400 years of Delhi’s culinary history. Traces secret recipes handed down through nine generations of Khari Baoli spice master families.'
     },
     dropCapStory: {
       dropLetter: 'W',
-      firstParagraph: 'hen Emperor Shah Jahan founded Shahjahanabad in 1648, his daughter Jahanara designed Chandni Chowk with silver canals to reflect the moonlight. Along its winding gallis, the royal chefs perfected recipes that have survived ten generations.',
-      secondParagraph: 'Taste the cloud-like Daulat ki Chaat that vanishes on the tongue, slow-simmered Nihari seasoned with 32 botanicals, and crispy jalebis fried in pure desi ghee.',
+      firstParagraph: 'hen Emperor Shah Jahan founded Shahjahanabad in 1648, his daughter Jahanara designed Chandni Chowk with silver canals to reflect the moonlight. Along its winding gallis, royal khansamas perfected recipes that have outlasted empires.',
+      secondParagraph: 'Taste the cloud-like Daulat ki Chaat that vanishes on the tongue, slow-simmered Nihari infused with 32 hand-ground botanicals, and crispy jalebis fried in pure desi ghee.',
       quote: '“In Delhi, history isn’t found in museums; it is simmered in brass cauldrons.”'
     },
     sights: [
@@ -459,7 +471,7 @@ export const STORIES: StoryItem[] = [
       },
       {
         title: 'Mirza Ghalib’s Haveli Courtyard',
-        description: 'Reading Urdu poetry in the tranquil arched courtyard of Delhi’s greatest romantic poet.',
+        description: 'Reading Urdu couplets in the arched courtyard of Delhi’s greatest romantic poet.',
         image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=500&q=80'
       }
     ],
@@ -467,13 +479,13 @@ export const STORIES: StoryItem[] = [
       {
         time: '04:00 PM',
         title: 'Jama Masjid Gate 3 Meet',
-        description: 'Starting with warm spiced butter tea and almond naan.',
+        description: 'Starting with warm spiced butter tea and sheermal bread.',
         icon: 'mosque'
       },
       {
         time: '05:15 PM',
         title: 'Spice Market Rooftop Ascent',
-        description: 'Overlooking the bustling streets while tasting raw green cardamom pods.',
+        description: 'Overlooking the bustling bazaar while sampling raw green Malabar cardamoms.',
         icon: 'landscape'
       },
       {
@@ -486,7 +498,7 @@ export const STORIES: StoryItem[] = [
     inclusions: [
       '8 authentic culinary tasting courses',
       'Heritage cycle-rickshaw rides inside the alleyways',
-      'Purified mineral water & herbal digestive paan',
+      'Purified mineral water & herbal digestive meetha paan',
       'Custom recipe booklet handwritten by chef families'
     ]
   }
@@ -494,27 +506,27 @@ export const STORIES: StoryItem[] = [
 
 export const GUIDES: GuideProfile[] = [
   {
-    id: 'elias-thorne',
-    name: 'Elias Thorne',
-    title: 'Architectural Historian & 15-Yr Heritage Guide',
+    id: 'rudra-pratap',
+    name: 'Rudra Pratap Singh Shekhawat',
+    title: 'Architectural Historian & 15-Yr ASI Heritage Guide',
     location: 'Jaipur & Abhaneri, Rajasthan',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    avatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
     rating: 4.98,
     reviewsCount: 312,
     experienceYears: 15,
-    languages: ['English', 'Hindi', 'Marwari', 'German'],
+    languages: ['Hindi', 'English', 'Rajasthani (Marwari)', 'German'],
     specialty: 'Medieval Stepwells & Rajput Fort Architecture',
-    bio: 'Specialist in 9th to 16th-century subterranean structures and celestial astronomy. Elias has authored two monographs on Rajasthani stepwells and leads immersive, poetic narrative walks.',
-    badges: ['Master Storyteller', 'Women Safety Certified', 'Top Rated 2025', 'First Aid Certified'],
-    pricePerDay: 150,
+    bio: 'Specialist in 9th to 16th-century subterranean structures and celestial astronomy. Rudra Pratap has authored two research monographs on Shekhawati and Abhaneri stepwells and leads immersive, poetic narrative walks.',
+    badges: ['Master Storyteller', 'Women Safety Certified', 'ASI Accredited', 'First Aid Certified'],
+    pricePerDay: 3200,
     reelCount: 4,
     hasReel: true,
     reels: [
       {
         id: 'reel-1',
-        guideId: 'elias-thorne',
-        guideName: 'Elias Thorne',
-        guideAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+        guideId: 'rudra-pratap',
+        guideName: 'Rudra Pratap Singh',
+        guideAvatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
         title: 'Why Chand Baori Drops 5 Degrees Every 10 Steps',
         location: 'Abhaneri, Rajasthan',
         quote: '“The ancient architects captured the winter wind and trapped it in stone shadows.”',
@@ -525,9 +537,9 @@ export const GUIDES: GuideProfile[] = [
       },
       {
         id: 'reel-2',
-        guideId: 'elias-thorne',
-        guideName: 'Elias Thorne',
-        guideAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+        guideId: 'rudra-pratap',
+        guideName: 'Rudra Pratap Singh',
+        guideAvatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
         title: 'Decoding the Jharokha Carvings of Amber Palace',
         location: 'Amer, Jaipur',
         quote: '“Queens watched royal processions through 953 stone lattices without being seen.”',
@@ -539,27 +551,27 @@ export const GUIDES: GuideProfile[] = [
     ]
   },
   {
-    id: 'maya-lin',
-    name: 'Maya Lin',
-    title: 'Rainforest Botanist & Eco-Storyteller',
+    id: 'baphilinia-nongkynrih',
+    name: 'Dr. Baphilinia Nongkynrih',
+    title: 'Ethnobotanist & Khasi Living Architecture Specialist',
     location: 'Shillong & Cherrapunji, Meghalaya',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
     rating: 5.0,
     reviewsCount: 189,
     experienceYears: 8,
-    languages: ['English', 'Khasi', 'Hindi', 'Mandarin'],
+    languages: ['Khasi', 'English', 'Hindi', 'Pnar'],
     specialty: 'Living Root Bridges & Sacred Tribal Groves',
-    bio: 'Botanist who lived 5 years with Khasi elders learning the oral botany of bio-engineering root bridges. Maya curates slow, sustainable expeditions through misty cloud forests.',
+    bio: 'Ethnobotanist who spent 8 years with Khasi clan elders learning the oral botany of bio-engineering Ficus elastica root bridges. Dr. Baphilinia curates slow, sustainable treks through misty cloud forests.',
     badges: ['Eco Pioneer', 'Solo Women Friendly', 'Wilderness Responder'],
-    pricePerDay: 135,
+    pricePerDay: 3500,
     reelCount: 3,
     hasReel: true,
     reels: [
       {
         id: 'reel-3',
-        guideId: 'maya-lin',
-        guideName: 'Maya Lin',
-        guideAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+        guideId: 'baphilinia-nongkynrih',
+        guideName: 'Dr. Baphilinia Nongkynrih',
+        guideAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
         title: 'How Khasi Elders Guide Roots Across Roaring Rivers',
         location: 'Cherrapunji, Meghalaya',
         quote: '“A living bridge is not made for oneself; it is grown for one’s grandchildren.”',
@@ -571,27 +583,27 @@ export const GUIDES: GuideProfile[] = [
     ]
   },
   {
-    id: 'rajesh-kumar',
-    name: 'Rajesh Kumar',
+    id: 'rajeshwar-sharma',
+    name: 'Pandit Rajeshwar Sharma',
     title: '7th-Gen Blue City Historian & Certified Guide',
     location: 'Jodhpur & Delhi, Rajasthan/Delhi',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    avatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
     rating: 4.96,
     reviewsCount: 420,
     experienceYears: 12,
-    languages: ['English', 'Hindi', 'Urdu', 'Marwari'],
+    languages: ['Hindi', 'Urdu', 'English', 'Marwari'],
     specialty: 'Mughal Culinary Arts & Blue City Guilds',
-    bio: 'Born in a 250-year-old blue haveli near Mehrangarh Fort. Rajesh unlocks private royal recipe books and hidden artisan workshops that tourists never find on maps.',
+    bio: 'Born in a 250-year-old blue haveli near Mehrangarh Fort. Pandit Rajeshwar unlocks centuries of private royal family recipe scrolls and hidden artisan workshops that tourists never find on maps.',
     badges: ['Guild Elder', 'Culinary Master', 'Govt Certified'],
-    pricePerDay: 120,
+    pricePerDay: 2800,
     reelCount: 5,
     hasReel: true,
     reels: [
       {
         id: 'reel-4',
-        guideId: 'rajesh-kumar',
-        guideName: 'Rajesh Kumar',
-        guideAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+        guideId: 'rajeshwar-sharma',
+        guideName: 'Pandit Rajeshwar Sharma',
+        guideAvatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
         title: 'The Real Reason Jodhpur’s Houses are Painted Indigo',
         location: 'Jodhpur, Rajasthan',
         quote: '“It wasn’t just religion—it was chemistry: copper sulfate keeping scorpions away.”',
@@ -599,6 +611,38 @@ export const GUIDES: GuideProfile[] = [
         likes: 2780,
         tags: ['#Jodhpur', '#BlueCity', '#HeritageSecrets'],
         duration: '0:50'
+      }
+    ]
+  },
+  {
+    id: 'unnikrishnan-nair',
+    name: 'K. P. Unnikrishnan Nair',
+    title: 'Kuttanad Canal Master & Backwater Oral Historian',
+    location: 'Alleppey & Kumarakom, Kerala',
+    avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+    rating: 4.98,
+    reviewsCount: 245,
+    experienceYears: 14,
+    languages: ['Malayalam', 'English', 'Hindi', 'Tamil'],
+    specialty: 'Ancient Spice Routes & Coir Boatcraft Heritage',
+    bio: 'Son of a traditional wooden boatbuilder from Kuttanad. Unnikrishnan guides travelers along ancient canal trade routes, sharing maritime folklore and the agro-heritage of farming below sea level.',
+    badges: ['Maritime Historian', 'River Eco Guardian', 'Women Safety Certified'],
+    pricePerDay: 2600,
+    reelCount: 3,
+    hasReel: true,
+    reels: [
+      {
+        id: 'reel-5',
+        guideId: 'unnikrishnan-nair',
+        guideName: 'Unnikrishnan Nair',
+        guideAvatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+        title: 'How 100-Foot Kettuvallams are Built Without Nails',
+        location: 'Alleppey, Kerala',
+        quote: '“Every plank of anjili wood is bound with hand-spun coir fiber and pure fish oil.”',
+        image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=85',
+        likes: 2190,
+        tags: ['#Kerala', '#Backwaters', '#Boatcraft', '#SlowTravel'],
+        duration: '0:52'
       }
     ]
   }
@@ -644,9 +688,9 @@ export const SOLO_MATCHES: SoloMatchUser[] = [
     id: 'solo-1',
     name: 'Aanya Sharma',
     age: 27,
-    location: 'Mumbai, India',
+    location: 'Bandra, Mumbai',
     currentCity: 'Jaipur (Near Stepwell)',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80',
+    avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     isWomenSafetyVerified: true,
     mutualStories: ['The Geometry of Silence', 'Secrets of the Blue City'],
@@ -657,33 +701,48 @@ export const SOLO_MATCHES: SoloMatchUser[] = [
   },
   {
     id: 'solo-2',
-    name: 'Chloe Laurent',
-    age: 29,
-    location: 'Lyon, France',
-    currentCity: 'Jaipur (C-Scheme)',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+    name: 'Pooja Nair',
+    age: 28,
+    location: 'Indiranagar, Bengaluru',
+    currentCity: 'Jaipur (C-Scheme / MI Road)',
+    avatar: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     isWomenSafetyVerified: true,
     mutualStories: ['Monsoon Magic in Kerala', 'Bridges Woven from Roots'],
-    interests: ['Botanical Sketches', 'Street Markets', 'Pottery'],
-    travelStyle: 'Solo Female Backpacker',
-    matchScore: 91,
+    interests: ['Dabu Block Printing', 'Handloom Guilds', 'Blue Pottery'],
+    travelStyle: 'Solo Female Backpacker • Textile Researcher',
+    matchScore: 92,
     distanceKm: 1.4
   },
   {
     id: 'solo-3',
     name: 'Vikram Joshi',
     age: 31,
-    location: 'Bengaluru, India',
+    location: 'Malleshwaram, Bengaluru',
     currentCity: 'Amer, Jaipur',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+    avatar: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     isWomenSafetyVerified: false,
     mutualStories: ['Whispers of Bhangarh', 'Street Food Chronicles'],
-    interests: ['Night Astrophotography', 'Mythology', 'Trekking'],
-    travelStyle: 'History Buff',
-    matchScore: 84,
+    interests: ['Night Astrophotography', 'Rajput Mythology', 'Fort Treks'],
+    travelStyle: 'History Enthusiast • Astrophotographer',
+    matchScore: 86,
     distanceKm: 3.2
+  },
+  {
+    id: 'solo-4',
+    name: 'Kabir Sen',
+    age: 30,
+    location: 'Salt Lake, Kolkata',
+    currentCity: 'Old Delhi (Chandni Chowk)',
+    avatar: 'https://images.unsplash.com/photo-1614036417651-efe5912149d8?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    isWomenSafetyVerified: false,
+    mutualStories: ['Street Food Chronicles', 'Secrets of the Blue City'],
+    interests: ['Bazaar Audio Soundscapes', 'Urdu Poetry', 'Haveli Architecture'],
+    travelStyle: 'Acoustic Chronicler • Cultural Documentarian',
+    matchScore: 88,
+    distanceKm: 4.1
   }
 ];
 
@@ -748,26 +807,26 @@ export const SAMPLE_COMIC_JOURNAL: ComicJournal = {
   tripTitle: 'A Story Written in Stone: Chand Baori Descent',
   date: 'October 14, 2025',
   location: 'Abhaneri, Rajasthan',
-  travelerName: 'Elena Rostova',
+  travelerName: 'Aditi Deshmukh',
   badgesEarned: [BADGES[0], BADGES[1], BADGES[2]],
-  guideQuote: '“To descend here is to shed the noise of the surface world, step by mathematical step.” — Elias Thorne',
-  personalNotes: 'The morning light cast razor-sharp shadows across the 3,500 steps. In the mid-tier royal pavilion, Elias shared how the king designed cool breezes across the stone chambers.',
+  guideQuote: '“To descend here is to shed the noise of the surface world, step by mathematical step.” — Rudra Pratap Singh Shekhawat',
+  personalNotes: 'The morning sun cast razor-sharp shadows across the 3,500 steps. In the mid-tier royal pavilion, Rudra Pratap explained how the king engineered cool breezes across the stone chambers.',
   panels: [
     {
       panelNumber: 1,
       title: 'Chapter I: The Inverted Mirage',
       caption: 'Abhaneri awoke under a dusty golden haze as we arrived at the ancient stone gateway.',
       dialogue: 'Look down. The labyrinth was made to reflect both the stars and the thirsty soul.',
-      speaker: 'Elias Thorne',
+      speaker: 'Rudra Pratap Singh',
       image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80',
       timeOfDay: '08:45 AM • Sunbreak'
     },
     {
       panelNumber: 2,
       title: 'Chapter II: The 3,500 Steps',
-      caption: 'Every step forms a flawless geometric rhyme. The temperature dropped noticeaby.',
+      caption: 'Every step forms a flawless geometric rhyme. The temperature dropped noticeably.',
       dialogue: 'Can you feel the air cooling? Five degrees for every ten steps.',
-      speaker: 'Elena (Traveler)',
+      speaker: 'Aditi (Traveler)',
       image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80',
       timeOfDay: '10:15 AM • Subterranean Descent'
     },
@@ -776,7 +835,7 @@ export const SAMPLE_COMIC_JOURNAL: ComicJournal = {
       title: 'Chapter III: The Royal Jharokhas',
       caption: 'Intricate sculptures of Ganesha and Mahishasuramardini stand sentinel over the quiet water.',
       dialogue: 'Here the queens spent the hottest desert months listening to monsoon songs.',
-      speaker: 'Elias Thorne',
+      speaker: 'Rudra Pratap Singh',
       image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80',
       timeOfDay: '11:30 AM • Royal Pavilions'
     },
@@ -808,9 +867,9 @@ export const INITIAL_TRIP_PLAN: TripPlan = {
       dayNumber: 1,
       title: 'Arrival & Sunset at Nahargarh Fort',
       location: 'Jaipur',
-      guideName: 'Elias Thorne',
-      guideAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      price: 90,
+      guideName: 'Rudra Pratap Singh',
+      guideAvatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
+      price: 1800,
       description: 'Check into Samode Haveli, followed by an evening sunset narrative atop Nahargarh Fort walls with panoramic views of the Pink City.',
       image: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80',
       time: '04:00 PM - 07:30 PM',
@@ -820,9 +879,9 @@ export const INITIAL_TRIP_PLAN: TripPlan = {
       dayNumber: 2,
       title: 'Descent into Chand Baori & Abhaneri',
       location: 'Abhaneri Village',
-      guideName: 'Elias Thorne',
-      guideAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      price: 150,
+      guideName: 'Rudra Pratap Singh',
+      guideAvatar: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80',
+      price: 2400,
       description: 'Subterranean geometry exploration of the 9th-century stepwell, Harshat Mata temple carvings, and village potter tea session.',
       image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80',
       time: '08:30 AM - 02:00 PM',
@@ -832,9 +891,9 @@ export const INITIAL_TRIP_PLAN: TripPlan = {
       dayNumber: 3,
       title: 'The Indigo Alleys of the Blue City',
       location: 'Jodhpur / Navchokiya',
-      guideName: 'Rajesh Kumar',
-      guideAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-      price: 120,
+      guideName: 'Pandit Rajeshwar Sharma',
+      guideAvatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
+      price: 2200,
       description: 'Morning walk through azure labyrinth, meeting traditional bandhani textile artisans, and rooftop saffron lassi tasting.',
       image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80',
       time: '08:00 AM - 12:30 PM',
@@ -844,21 +903,21 @@ export const INITIAL_TRIP_PLAN: TripPlan = {
       dayNumber: 4,
       title: 'Mughal Culinary Degs & Night Bazaar',
       location: 'Old Delhi / Chandni Chowk',
-      guideName: 'Rajesh Kumar',
-      guideAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
-      price: 110,
-      description: 'Tasting 8 historic dishes across 400-year-old lanes, visiting Asia’s largest spice market, and sunset Urdu poetry courtyard.',
+      guideName: 'Pandit Rajeshwar Sharma',
+      guideAvatar: 'https://images.unsplash.com/photo-1601288496920-b6154fe3626a?auto=format&fit=crop&w=400&q=80',
+      price: 1800,
+      description: 'Tasting historic dishes across 400-year-old lanes, visiting Asia’s largest spice market, and sunset Urdu poetry courtyard.',
       image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80',
       time: '04:00 PM - 08:30 PM',
       includedActivity: 'Spice Rooftop Access & 8 Tasting Courses'
     }
   ],
   pricing: {
-    guideFee: 150,
-    heritageStays: 320,
-    storyCab: 85,
-    heritagePasses: 40,
+    guideFee: 8200,
+    heritageStays: 14500,
+    storyCab: 5800,
+    heritagePasses: 2400,
     taxRate: 0.12,
-    total: 666.40
+    total: 30900
   }
 };
